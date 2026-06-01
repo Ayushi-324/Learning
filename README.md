@@ -1,4 +1,4 @@
-# 🧠 Learning Journal
+# 🧠 Learning ....
 
 Daily proof of work across Data Structures, Backend engineering, and Core Architecture. Focused purely on logic over syntax and small coding trade-offs.
 
