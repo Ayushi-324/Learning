@@ -18,3 +18,10 @@ class Solution:
         return dummy.next  #return actual new head
 
 # LOGIC - Fast and slow pointers
+#Two-Pointer Gap -> we make a constant boundary through fast pointer
+# Time Complexity - 0(n) runtime due to single pass and Sc- O(1) RAM koi extra array/map nhi
+# Dummy node saves head deletion ka crash two pointer se spacing bani rheti
+
+# if Front Deletion- back deletion me list end nhi pata isiliye do pointers ka gap need but here we know starting point is head se sidha n-1 kadam aage ex- delete 3rd so 3-1 means 2 pe khade
+# Cycle - find cycle length then cut (pehle cycle detection algo se loop ka end point freeze then usi ko tail maan kr original gap logic )
+
