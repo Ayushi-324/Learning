@@ -1,0 +1,19 @@
+# 1. Virtual Environments 
+**/.venv/
+venv/
+ENV/
+
+# 2. Python Cache Files 
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 3. Environment Variables & Secrets 
+.env
+*.env
+secret.json
+
+# 4. OS temporary files 
+.DS_Store
+Thumbs.db
