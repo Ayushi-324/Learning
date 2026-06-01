@@ -6,7 +6,7 @@ Daily proof of work across Data Structures, Backend engineering, and Core Archit
 
 ## 📁 Repository Map
 
-* **`🧠 DSA/`** – Time and space optimized algorithms (Python). Every file includes desi logic and edge-case notes directly inside the code comments.
+* **`🧠 DSA/`** – Time and space optimized algorithms (Python). Every file includes logic , trade-off and edge-case directly inside the code comments.
 * **`🌐 Backend/`** – High-throughput APIs (FastAPI/Node.js) and databases (PostgreSQL) isolated using lightweight local virtual environments.
 * **`🏗️ System_Design/`** – Core concepts, fundamental architecture notes, and system-level trade-offs learned along the way.
 
