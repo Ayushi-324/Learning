@@ -1,0 +1,22 @@
+class Solution:
+    def pathSum(self, root: TreeNode, targetSum: int) -> int:
+        prefix_sums = defaultdict(int) #map: prefix sum- occurence freq
+        prefix_sums[0] = 1 # Base case: Zero sum pehle se 1 baar h
+        
+        def dfs(node: TreeNode, curr_sum: int) -> int:
+            if not node:
+                return 0
+                
+            curr_sum += node.val # Running total updated
+            paths = prefix_sums[curr_sum - targetSum] #kya complement prefix phle dekha?
+    
+            prefix_sums[curr_sum] += 1 #curr sum map me bdha
+        
+            paths += dfs(node.left, curr_sum) #subtrees explore nd path count add
+            paths += dfs(node.right, curr_sum)
+            prefix_sums[curr_sum] -= 1  #backtrack- parent context ko map clean
+             
+            return paths
+
+        return dfs(root, 0)
+        
